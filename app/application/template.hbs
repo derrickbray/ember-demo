@@ -2,11 +2,11 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__content">
-      <h1 class="nav__content-title">Ember Demo</h1>
+      {{#link-to "index" class="nav__content-box-link"}}<h1>Ember Demo</h1>{{/link-to}}
       <div class="nav__content-box">
-        <a href="" class="nav__content-box-link">Page 1</a>
-        <a href="" class="nav__content-box-link">Page 2</a>
-        <a href="" class="nav__content-box-link">Page 3</a>
+        {{#link-to "sidebar" class="nav__content-box-link"}}Sidebar{{/link-to}}
+        {{#link-to "about" class="nav__content-box-link"}}About{{/link-to}}
+        {{#link-to "contact" class="nav__content-box-link"}}Contact{{/link-to}}
       </div>
     </div>
   </div>
