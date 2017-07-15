@@ -1,3 +1,13 @@
 
-
-{{outlet}}
+<div class="bar">
+  <div class="bar__sidebar">
+    <h2 class="bar__sidebar-title">SideBar</h2>
+    <div class="bar__sidebar-tag">This will stay here for all of the nested routes.</div>
+    {{#link-to "sidebar.index" class="bar__sidebar-link"}}This is the main or index link.{{/link-to}}
+    {{#link-to "sidebar.option-one" class="bar__sidebar-link"}}Here is the first option{{/link-to}}
+    {{#link-to "sidebar.option-two" class="bar__sidebar-link"}}Here is the second option{{/link-to}}
+  </div>
+  <div class="bar__content">
+    {{outlet}}
+  </div>
+</div>
