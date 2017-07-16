@@ -1,0 +1,26 @@
+.bar {
+  display: flex;
+
+  &__sidebar {
+    width: 25%;
+    padding: 0.5rem;
+    border-right: 1px solid black;
+    text-align: center;
+
+    &-title {
+    }
+
+    &-tag {
+      margin-bottom: 1rem;
+    }
+
+    &-link {
+      display: block;
+      margin: 0.5rem;
+    }
+  }
+
+  &__content {
+    width: 75%;
+  }
+}

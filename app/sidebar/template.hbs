@@ -2,10 +2,14 @@
 <div class="bar">
   <div class="bar__sidebar">
     <h2 class="bar__sidebar-title">SideBar</h2>
-    <div class="bar__sidebar-tag">This will stay here for all of the nested routes.</div>
+    <div class="bar__sidebar-tag">This will stay for all of the nested routes.</div>
     {{#link-to "sidebar.index" class="bar__sidebar-link"}}This is the main or index link.{{/link-to}}
     {{#link-to "sidebar.option-one" class="bar__sidebar-link"}}Here is the first option{{/link-to}}
     {{#link-to "sidebar.option-two" class="bar__sidebar-link"}}Here is the second option{{/link-to}}
+    <a href="https://emberjs.com/" class="bar__sidebar-link">EmberJS</a>
+    <a href="https://www.google.com/" class="bar__sidebar-link">Google</a>
+    <a href="http://www.bing.com/" class="bar__sidebar-link">Bing</a>
+    {{#link-to "index" class="bar__sidebar-link"}}Back to Home{{/link-to}}
   </div>
   <div class="bar__content">
     {{outlet}}
