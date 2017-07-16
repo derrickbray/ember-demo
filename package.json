@@ -12,6 +12,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist beginner-tutorials-ember-demo.surge.sh",
     "test": "ember test"
   },
   "devDependencies": {
